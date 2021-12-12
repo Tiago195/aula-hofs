@@ -101,7 +101,7 @@ describe('3 - Teste da Função doisTipos', () => {
     expect(typeof doisTipos()).toBe('object');
   })
 
-  test('Teste se a função retorna os pokemons com todos os base_stat maiores ou iguais a um valor', () => {
+  test('Teste se a função retorna os pokemons com mais de um tipo', () => {
     const arrayEsperado = [
       {
         id: 1,
