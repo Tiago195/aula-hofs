@@ -1,0 +1,34 @@
+mais importante => map filter sort reduce
+principais diferenças das hofs => {
+  {
+  map = retornar um novo array com o mesmo tamanho do original, com modificaçoes estabelecidas na callback, nao altera o array original;
+  filter = retornar um array com tamanho diferente, FILTRANDO o array original com a condiçao passada dentro da callback;
+  // Ponto importante, filter retornar para dentro do novo array, o elemento inteiro q passou na condiçao
+  }
+  {
+  every = retornar valor booleano, caso todos os elementos do array iterado satisfaçao a condiçao passado na callback, retornar true, caso contrario retorna false
+  some = retornar valor booleano, caso umos elementos do array iterado satisfaçao a condiçao passado na callback, retornar true, caso contrario retorna false
+  }
+  {
+  filter = retornar um array com tamanho diferente, FILTRANDO o array original com a condiçao passada dentro da callback;
+  find = retorna o elemento que satisfaz a condiçao passada na callback;
+  }
+}
+
+Pontos importantes => {
+  reduce hof totalmente generica
+  foreEch hof de iteraçao, nao retorna nada
+}
+
+exemplos => {
+  console.log(['tiago', 'ruy'].map(e => ({ name: e, mensagem: `Olà ${e}` })))
+  
+  console.log(['tiago', 'ruy'].reduce((a, b) => {
+  a.push({ name: b, mensagem: `Olà ${b}` })
+  return a
+  }, []))
+  console.log(['tiago', 'ruy'].reduce((a, b) => {
+  a[b] = { mensagem: `Olà ${b}` }
+  return a
+  }, {}))
+}
