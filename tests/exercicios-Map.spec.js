@@ -21,7 +21,7 @@ describe('5 - Teste da Função nameStatusValor', () => {
   })
 
   test('Teste se procurar tipo retorna uma array', () => {
-    expect(typeof nameStatusValor()).toBe('object');
+    expect(Array.isArray(nameStatusValor('special-attack'))).toBeTruthy();
   })
 
   test('Teste se a função retorna os nomes e os ataques separados por vírgula', () => {
@@ -36,7 +36,7 @@ describe('5 - Teste da Função nameStatusValor', () => {
       'wartortle, special-attack: 65',
       'blastoise, special-attack: 85'
     ]
-    expect(nameStatusValor()).toEqual(result);
+    expect(nameStatusValor('special-attack')).toEqual(result);
   })
 })
 

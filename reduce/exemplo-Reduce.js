@@ -20,21 +20,22 @@ const person = [
 ]
 
 // Exemplo_01 => Some todos os valores do array
-console.log(array.reduce((acumulador, numero) => {
-  return acumulador + numero
-}, 0))
+// console.log(array.reduce((acumulador, numero) => {
+//   return acumulador + numero
+// }, 0))
 
-console.log(array.reduce((acumulador, numero) => {
-  return acumulador + numero
-}))
+// console.log(array.reduce((acumulador, numero) => {
+//   return acumulador + numero
+// }))
 
 // Exemplo_02 => Retorne uma string com nome e sobrenome separado por virgula
-console.log(person.reduce((acc, pessoa, index) => {
-  acc[`pessoa ${index + 1}`] = `${pessoa.nome} ${pessoa.sobrenome} tem ${pessoa.idade}. Bem vindo a Trybe!!`
-  return acc
-}, {}))
+// console.log(person.reduce((acc, pessoa, index) => {
+//   acc[`pessoa ${index + 1}`] = `${pessoa.nome} ${pessoa.sobrenome} tem ${pessoa.idade}. Bem vindo a Trybe!!`
+//   return acc
+// }, {}))
 // Exemplo_03 => Retorne o dobro de todos os numero pares
-console.log(array.reduce((acc, numero) => {
-  if (numero % 2 === 0) acc.push(numero * 2)
-  return acc
-}, []))
+// console.log(array.reduce((acc, numero) => {
+//   if (numero % 2 === 0) acc.push(numero * 2)
+//   return acc
+// }, []))
+// console.log(array.filter(e => e%2===0).map(e => e*2))

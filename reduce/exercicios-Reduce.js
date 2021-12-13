@@ -17,6 +17,7 @@ const pokedex = require('../data')
 const statusMaisForte = (status) => {
   // Seu codigo
 }
+
 // Retorne um array com os pokemons do tipo grass 
 // Expected 
 /* [
@@ -112,4 +113,10 @@ const procurarTipoReduce = (tipo) => {
 } */
 const fichaPokedex = () => {
   // Seu codigo
+}
+
+module.exports = {
+  statusMaisForte,
+  procurarTipoReduce,
+  fichaPokedex,
 }

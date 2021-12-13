@@ -3,7 +3,7 @@
     "jest": "^27.4.4"
   },
   "scripts": {
-    "test": "jest tests/",
+    "test": "jest",
     "lint": "eslint --no-inline-config --no-error-on-unmatched-pattern -c .eslintrc.json . --ext .js,.jsx"
   }
 }

@@ -61,3 +61,9 @@ const nameStatusValor = (status) => {
 const novoFormato = () => {
   // Seu codigo
 }
+
+module.exports = {
+  transformarString,
+  nameStatusValor,
+  novoFormato,
+}
