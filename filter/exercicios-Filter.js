@@ -131,3 +131,9 @@ const maisFortes = (numero) => {
 const doisTipos = () => {
   //seu codigo
 }
+
+module.exports = {
+  maisFortes,
+  doisTipos,
+  procurarTipo,
+}
